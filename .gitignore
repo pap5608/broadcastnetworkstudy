@@ -1,0 +1,8 @@
+*.xls
+*백업.html
+_course_support/
+_qa*
+.publish/
+node_modules/
+.env
+.env.*
