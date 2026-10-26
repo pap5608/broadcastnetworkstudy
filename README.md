@@ -9,6 +9,15 @@ https://pap5608.github.io/broadcastnetworkstudy/
 `Packet_Tracer_실습교안_배포용.html`을 GitHub Pages의 첫 화면으로 배포합니다.
 `main` 브랜치에 푸시하면 GitHub Actions가 교안과 PDF·PPTX 자료를 배포합니다.
 
+## Vercel 배포
+
+https://broadcastnetworkstudy.vercel.app/
+
+`vercel.json`이 `node scripts/build-site.cjs`를 실행하고 `dist` 폴더를 배포합니다.
+빌드 과정에서 배포용 HTML을 `dist/index.html`로 복사해 첫 화면을 제공합니다.
+Vercel 프로젝트의 Root Directory는 저장소 루트로 지정합니다.
+GitHub의 `main` 브랜치와 연결하면 푸시할 때 자동으로 재배포됩니다.
+
 ## 자료
 
 - `Packet_Tracer_실습교안_배포용.html`: 웹 배포용 교안

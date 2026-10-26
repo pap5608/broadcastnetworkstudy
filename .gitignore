@@ -4,5 +4,6 @@ _course_support/
 _qa*
 .publish/
 node_modules/
+dist/
 .env
 .env.*
