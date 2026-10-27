@@ -16,4 +16,5 @@ for (const file of files) {
   fs.copyFileSync(path.join(root, file), path.join(output, file));
 }
 fs.copyFileSync(path.join(root, files[0]), path.join(output, 'index.html'));
+fs.cpSync(path.join(root, 'assets'), path.join(output, 'assets'), { recursive: true });
 console.log('배포용 교안과 강의 자료를 dist에 생성했습니다.');

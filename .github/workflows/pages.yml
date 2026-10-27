@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p _site
           cp -- *.html *.pdf *.pptx _site/
+          cp -R -- assets _site/assets
           cp -- 'Packet_Tracer_실습교안_배포용.html' _site/index.html
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
